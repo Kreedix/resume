@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nhlamulo Karabo" />
+    <meta
+      name="description"
+      content="Responsive Resume CV using HTML CSS and JS"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Sir nhlamulo Karabo Digital Resume CV</title>
+  </head>
+
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Sir Nhlamulo Karabo</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book-open nav__icon"></i>Education
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase nav__icon"></i>Experience
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">
+                <i class="bx bx-award nav__icon"></i>Certificates
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#references" class="nav__link">
+                <i class="bx bx-link-external nav__icon"></i>References
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img
+                  src="assets/img/perfil.png"
+                  alt="home image"
+                  class="home__image"
+                />
+
+                <h1 class="home__title">Mr Nhlamulo <b>Karabo Magongwa</b></h1>
+                <h3 class="home__profession">Systems Software Engineer</h3>
+
+                <div>
+                  <a
+                    download="SirNhlamuloKaraboResume"
+                    href="assets/cv/SirNhlamuloKaraboResume.pdf"
+                    class="home__button-movil"
+                  >
+                    <i class="bx bx-download home__icon"></i> Download
+                  </a>
+                </div>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__info">
+                  <i class="bx bx-map home__icon"></i> South Africa, Gauteng
+                </span>
+                <span class="home__info">
+                  <i class="bx bx-envelope home__icon"></i>
+                  sir.nhlamulo@gmail.com
+                </span>
+                <span class="home__info">
+                  <i class="bx bx-phone home__icon"></i> +27 67-252-1424
+                </span>
+              </div>
+
+              <i class="bx bxs-moon change-theme" id="theme-button"></i>
+
+              <i
+                class="bx bx-download generate-pdf"
+                title="Generate PDF"
+                id="resume-button"
+              ></i>
+            </div>
+          </section>
+
+          <section class="profile section" id="profile">
+            <div class="profile__container container bd-grid">
+              <h2 class="section__title">PROFILE</h2>
+              <p class="profile__desc">
+                I am an IT specialist & artist inspired by life and enthusiastic
+                about constantly striving to be better and looking to achieve
+                greatness in the form of awe aspiring software & practical
+                breakthroughs in the industry.
+              </p>
+            </div>
+          </section>
+          <section class="social section">
+            <div class="social__container container bd-grid">
+              <h2 class="section__title">SOCIAL</h2>
+
+              <div class="social__list bd-grid">
+                <a
+                  href="https://www.linkedin.com/in/sir-nhlamulo/"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx bxl-linkedin-square"></i> @sir-nhlamulo
+                </a>
+                <a
+                  href="https://web.facebook.com/Sir.Nhlamulo"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx bxl-facebook"></i> @Sir.Nhlamulo
+                </a>
+                <a
+                  href="https://www.instagram.com/sir.nhlamulo"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx bxl-instagram"></i> @sir.nhlamulo
+                </a>
+                <a
+                  href="https://www.github.com/sirnhlamulo"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx bxl-github"></i> @sir.nhlamulo
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="education section" id="education">
+            <h2 class="section__title">Education</h2>
+
+            <div class="education__container container bd-grid">
+              <div class="education__content">
+                <div class="education__boundary">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__info bd-grid">
+                  <h3 class="education__title">
+                    Bachelors of Software Science
+                  </h3>
+                  <div class="education__time">
+                    University of Belgium Campus
+                  </div>
+                  <div class="education__year">2013 - 2016 / 2021 - 2023</div>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__boundary">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__info bd-grid">
+                  <h3 class="education__title">Online Certification</h3>
+                  <div class="education__time">
+                    Linkedin, Microsoft & Office365
+                  </div>
+                  <div class="education__year">2016 - ongoing</div>
+                </div>
+              </div>
+              <div class="education__content">
+                <div class="education__boundary">
+                  <span class="education__rounder"></span>
+                </div>
+
+                <div class="education__info bd-grid">
+                  <h3 class="education__title">Certification of Completion</h3>
+                  <div class="education__time">Willowridge High School</div>
+                  <div class="education__year">2012</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+              <div class="skills__content">
+                <ul class="skills__data">
+                  <li class="skills__name">Node</li>
+                  <li class="skills__name">HTML</li>
+                  <li class="skills__name">CSS</li>
+                  <li class="skills__name">JavaScript</li>
+                </ul>
+              </div>
+
+              <div class="skills__content">
+                <ul class="skills__data">
+                  <li class="skills__name">Figma</li>
+                  <li class="skills__name">Laravel</li>
+                  <li class="skills__name">React</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <section class="experience section" id="experience">
+            <h3 class="section__title">Experience</h3>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__boundary">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__info bd-grid">
+                  <h3 class="experience__title">
+                    Aspiring Master of Systems Engineering
+                  </h3>
+                  <div class="experience__year">
+                    Virtunet, Remote — Systems Engineer
+                  </div>
+                  <div class="experience__desc">
+                    Jan 2021 · 2 yr 8 mos - Present
+                    <br />
+                    Ensuring products are scaled and estimated to meet expected
+                    demand
+                    <br />
+                    Primarily a coding position Risk Management , Server-site &
+                    Server reports
+                    <br />
+                    Software discussions, code reviews and company marketing
+                    events
+                  </div>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__boundary">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__info bd-grid">
+                  <h3 class="experience__title">
+                    Specialist Of Software Development
+                  </h3>
+                  <div class="experience__year">
+                    Karic Group Pty Ltd, Randburg — Systems Developer
+                  </div>
+                  <div class="experience__desc">
+                    Aug 2019 - Feb 2020 · 7 mos
+                    <br />Modify existing front-end, back-end solutions to
+                    company standard <br />UI/UX features, project design &
+                    planning <br />Web responsive modifications & site
+                    configurations
+                  </div>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__boundary">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__info bd-grid">
+                  <h3 class="experience__title">Junior Of Web Development</h3>
+                  <div class="experience__year">
+                    MDS Collivery, Johannesburg — Software Developer
+                  </div>
+                  <div class="experience__desc">
+                    Dec 2017 - Feb 2019 · 1 yr 3 mos
+                    <br />
+                    Front-end, back-end & logical solutions to the courier
+                    service platform <br />
+                    Design, Estimate & code new features <br />
+                    Perform code reviews of team members work
+                  </div>
+                </div>
+              </div>
+              <div class="experience__content">
+                <div class="experience__boundary">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__info bd-grid">
+                  <h3 class="experience__title">JUNIOR NETWORKER</h3>
+                  <div class="experience__year">
+                    PMDMS Telecommunication , Centurion — Internship
+                  </div>
+                  <div class="experience__desc">
+                    Jan 2015 - Aug 2017 · 1 yr 8 mos
+                    <br />Networking, Design & Develop Server Code <br />
+                    Junior Project & Site Management <br />Site Configuration,
+                    Server Configuration & Testing <br />Perform modifications
+                    to existing software & Servers <br />Legal Liability &
+                    Server commissioning
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="certificate section" id="certificates">
+            <h3 class="section__title">Certificate(s)</h3>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <div class="certificate__title">Linkedin certificates</div>
+                <div class="certificate__desc">
+                  Succeeding in Web Development: Full Stack and Front End Course
+                </div>
+                <div class="certificate__desc">
+                  Programming Foundations: Fundamentals Course
+                </div>
+                <div class="certificate__desc">
+                  Programming Foundations: Databases
+                </div>
+              </div>
+              <div class="certificate__content">
+                <div class="certificate__title">Microsoft Certificates</div>
+                <div class="certificate__desc">
+                  Microsoft Thinti'Million
+                  <br />Literacy <br />Spreadsheets <br />Database Systems
+                  <br />Presentation <br />Computer Applications Technology
+                  <br />Power Bi
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="references section" id="references">
+            <h3 class="section__title">References</h3>
+
+            <div class="references__container bd-grid">
+              <div class="references__content bd-grid">
+                <div class="references__subtitle">Sr. Advance Procurement</div>
+                <div class="references__title">Mr. AA Jabari</div>
+                <ul class="references__contact">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/aricjabari/"
+                      target="_blank"
+                      class="social__link"
+                    >
+                      <i class="bx bxl-linkedin-square"></i> @aricjabari
+                    </a>
+                  </li>
+                  <li>Email: aric.jabari@gmail.com</li>
+                </ul>
+              </div>
+
+              <div class="references__content bd-grid">
+                <div class="references__subtitle">Sr. Marketting Manager</div>
+                <div class="references__title">Ms. T Anderson</div>
+                <ul class="references__contact">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/taryn-lee-a-431068201/"
+                      target="_blank"
+                      class="social__link"
+                    >
+                      <i class="bx bxl-linkedin-square"></i> @taryn-lee-a
+                    </a>
+                  </li>
+                  <li>Email: t.anderson@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="languages section">
+            <h3 class="section__title">Languages</h3>
+
+            <div class="languages__container bd-grid">
+              <div class="languages__content">
+                <ul class="languages__data">
+                  <li class="languages__name">
+                    <span class="languages__circle"></span> English
+                  </li>
+                  <li class="languages__name">
+                    <span class="languages__circle"></span> Sign Language
+                  </li>
+                  <li class="languages__name">
+                    <span class="languages__circle"></span> Xitsonga
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="interests section">
+            <h3 class="section__title">Interests</h3>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <div class="interests__data">
+                  <i class="bx bx-headphone"></i>
+                  <span class="interests__name">Music</span>
+                </div>
+
+                <div class="interests__data">
+                  <i class="bx bx-grid-alt"></i>
+                  <span class="interests__name">Video</span>
+                </div>
+
+                <div class="interests__data">
+                  <i class="bx bx-award"></i>
+                  <span class="interests__name">Art</span>
+                </div>
+
+                <div class="interests__data">
+                  <i class="bx bxs-book"></i>
+                  <span class="interests__name">Reading</span>
+                </div>
+
+                <div class="interests__data">
+                  <i class="bx bx-dumbbell"></i>
+                  <span class="interests__name">Fitness</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <a href="#" class="srolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
